@@ -9,15 +9,29 @@
 }
 
 #container, #works, #page, #about,#inputs {
-  height: 100vh;
   width: 100%;
   position: relative;
+}
+#container{
+  height: 100vh;
+}
+#works{
+  height: 100vh;
+}
+#page{
+  height: 100vh;
+}
+#about{
+  height: 100vh;
+}
+#inputs{
+  height: 100vh;
 }
 
 #container .back-img {
   width: 100%;
   height: 100%;
-  background-image: url(./../img/img2.jpg);
+  
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +50,27 @@
 #container .title h2{
   text-align: center;
   margin: auto;
+}
+#container .title .logo_img{
+  align-items: center;
+  text-align: center;
+}
+#container .title .logo2_img{
   position: absolute;
+  margin-top: -10vw;
+  margin-left: -32vh;
+  z-index: 2;
+}
+#container .click_here{
+  margin-left: 33vh;
+  background-color: #bf8f83;
+  height: 25vh;
+  width: 50%;
+  position: absolute;
+}
+#container .click_here .img_click{
+  margin-left: -15vh;
+  margin-top: -6vw;
 }
 
 .navbar ul {
@@ -51,13 +85,13 @@
   font-size: 25px;
 }
 
-.nav-bar ul li a {
-  text-transform: uppercase;
+.navbar ul li a {
+
   text-decoration: none;
   color: peru;
 }
 
-.nav-bar ul li:hover a {
+.navbar ul li:hover a {
   color: white;
 }
 
@@ -167,21 +201,59 @@
   font-weight: 700;
   letter-spacing: 2px;
 }
+#container .click_here img{
+  width: 1000;
+  height: 600;
+}
 
 .back-img, .second-img, .third-img, .fourth-img, .five-img {
   background-attachment: fixed;
 }
 
-@media only screen and (max-width: 600px) {
-
-  #works .title h2{
-    font-size: 100px;
+@media only screen and (max-width: 768px) {
+  #container .title .logo2_img{
+    margin-top: -30vw;
+    margin-left: -28vh;
   }
-  #works .title h3{
-
-    font-size: 35px;
+  #container, #works, #page, #about,#inputs {
+    width: 100%;
+    position: relative;
   }
-  #works .title h4{
-    font-size: 30px;
+  #container{
+    height: 120vh;
+  }
+  #works{
+    height: 100vh;
+  }
+  #page{
+    height: 100vh;
+  }
+  #about{
+    height: 100vh;
+  }
+  #inputs{
+    height: 100vh;
+  }
+
+  #container .title .logo2_img{
+    position: absolute;
+    margin-top: -35vw;
+    margin-left: -28vh;
+    z-index: 2;
+  }
+  
+  #container .click_here{
+    margin-top: 7vw;
+    margin-left: -5px;
+    background-color: #bf8f83;
+    height: 25vh;
+    width: 100%;
+  }
+  #container .click_here .img_click{
+    margin-left: -30vh;
+    margin-top: -28vw;
+  }
+  .navbar{
+    margin-left: -100;
   }
 }
